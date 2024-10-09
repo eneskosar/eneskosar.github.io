@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="Ebx4m_OHw9PFa8n1_mHNZP8Gi94CjgM9pNUuA5yxoNQ" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enes Koşar - Academic Webpage</title>
-    <meta name="keywords" content="Enes Koşar, Enes Kosar, Enes, Koşar, Bilkent University, Machine Learning, Deep Learning, Artificial Intelligence, AI, Wearable Sensors, Disease Prediction, PhD, Research, Computer Science">
     <meta name="description" content="Official academic webpage of Enes Koşar. PhD Student at Bilkent University specializing in Machine Learning and Deep Learning.">
-
+    <meta name="keywords" content="Enes Koşar, Bilkent University, Machine Learning, Deep Learning">
     
     <style>
         body {
@@ -15,7 +13,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            background-color: #f4f4f9;
+            background-color: white; /* Background color set to white */
         }
         .sidebar {
             width: 300px;
@@ -23,6 +21,8 @@
             color: white;
             padding: 20px;
             text-align: center;
+            position: fixed;
+            height: 100%;
         }
         .sidebar img {
             width: 150px;
@@ -64,8 +64,9 @@
             background-color: #1abc9c;
         }
         .content {
+            margin-left: 320px;
+            padding: 20px 40px; /* Added left and right padding */
             flex: 1;
-            padding: 20px;
         }
         .section {
             margin-bottom: 40px;
@@ -89,11 +90,33 @@
         .section ul li {
             margin-bottom: 10px;
         }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .content {
+                margin-left: 0;
+                padding: 10px 20px; /* Adjusted for mobile */
+            }
+            .sidebar img {
+                width: 100px;
+            }
+            .sidebar h1 {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="sidebar">
-        <img src="pp.jpeg" alt="Enes Koşar">
+        <img src="myimage.jpeg" alt="Enes Koşar">
         <h1>Enes Koşar</h1>
         <p>PhD Student, Bilkent University<br>
            Electrical and Electronics Engineering</p>
@@ -111,12 +134,13 @@
         <a href="#awards">Awards and Achievements</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#academic-services">Academic Services</a>
     </div>
     <div class="content">
         <div class="section" id="research-interests">
             <h2>Research Interests</h2>
             <ul>
-                <li>I am interested in Machine Learning and Deep Learning applications. I find it crucial to develop methods to train computationally efficient robust deep learning models with less data in an unsupervised or semisupervised manner. I hope to use AI for the benefit of humanity. </li>
+                <li>I have extensive experience in deep learning, specializing in novel ensemble approaches for time series signal classification in human activity and user identity recognition. My work includes a thesis and journal papers in this area. Additionally, I have contributed to deep learning projects in the domains of computer vision and natural language processing. </li>
             </ul>
         </div>
         <div class="section" id="education">
@@ -134,7 +158,13 @@
             <ul>
                 <li>Journal Publications</li>
                 <li>E. Koşar and B. Barshan, “A new cnn-lstm architecture for activity recognition employing wearable motion sensor data: Enabling diverse feature extraction,” Engineering Applications of Artificial Intelligence, vol. 124, p. 106529, 2023.</li>
-                <li>E. Koşar and B. Barshan, “Transfer learning between human activity and user identity recognition tasks with a memory efficient 2d cnn-lstm model for wearables (in preparation).”</li>
+                <li>E. Koşar and B. Barshan, “Bidirectional Transfer Learning Between Activity and User Identity Recognition Tasks with a 2D CNN-LSTM Model for Wearables,” (under review in IEEE Internet of Things Journal).</li>
+            </ul>
+        </div>
+        <div class="section" id="academic-services">
+            <h2>Academic Services</h2>
+            <ul>
+                <li>Reviewed for Journal: Engineering Applications of Artificial Intelligence, Elsevier.</li>
             </ul>
         </div>
         <div class="section" id="awards">
